@@ -25,6 +25,7 @@ class LinkedList:
             raise Exception("链表为空")
         head = self.head                 # 10 2 -3, head = 10
         self.head = self.head.next       # 2 - 3, head =10
+        head.next = None
         return head
 
     def print(self):
